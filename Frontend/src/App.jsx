@@ -37,7 +37,7 @@ function AppContent() {
       return;
     }
 
-    fetch("${import.meta.env.VITE_API_URL}/api/usuario/actual", {
+    fetch('${import.meta.env.VITE_API_URL}/api/usuario/actual', {
       credentials: "include",
       headers: {
         Accept: "application/json",
