@@ -1,0 +1,63 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  color: white;
+  font-size: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.rbtImg{
+    width: 600px;
+    height: auto;
+}
+
+.contentgus{
+  max-width: 600px;
+  text-align: center;
+}
+
+.subtitulo1{
+    color:rgb(255, 255, 255);
+    font-size:40px;
+    font-weight: bold;
+}
+
+.caja1e{
+      background: linear-gradient(to right, #000000, #001F4D); /* fondo degradado similar al azul oscuro */
+      color: white; /* texto blanco */
+      padding: 20px; /* espacio interno */
+      border-radius: 20px; /* bordes redondeados */
+      font-family: Arial, sans-serif; /* fuente legible */
+      max-width: 800px; /* ancho máximo */
+      margin: 20px auto; /* centrar en la página */
+      line-height: 1.6; /* mejorar legibilidad */
+      text-align: justify;
+      font-size: 20px;
+}
+
+.subtitulo2{
+    color:rgb(255, 255, 255);
+    font-size:40px;
+    font-weight:bold;
+}
+
+.caja2e{
+      background: linear-gradient(to right, #000000, #001F4D); /* fondo degradado similar al azul oscuro */
+      color: white; /* texto blanco */
+      padding: 20px; /* espacio interno */
+      border-radius: 20px; /* bordes redondeados */
+      font-family: Arial, sans-serif; /* fuente legible */
+      max-width: 800px; /* ancho máximo */
+      margin: 20px auto; /* centrar en la página */
+      line-height: 1.6; /* mejorar legibilidad */
+      text-align: justify;
+      font-size: 20px;
+}

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  color: white;
+  font-size: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.imaaAgeOverlay {
+  position: absolute;
+  top: 250px;
+  left: 30%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rbt55{
+  width: 450px;
+  height: auto;
+  pointer-events: none; /* No bloquea clics en texto debajo */
+}
+
+.Subtitulo314{
+    position: relative;
+    top: 0;
+    left: 185%;
+    color:rgb(253, 253, 253);
+    font-size:30px; 
+    font-weight: bold;
+}
+
+.Subtitulo32 {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold; /* si deseas que se vea como en la imagen */
+  max-width: 500px; /* opcional, para limitar el ancho */
+  line-height: 1.5;  /* mejor legibilidad */
+
+}
+
+.caja1{
+      background: linear-gradient(to right, #000000, #001F4D); 
+      color: white; 
+      padding: 20px; 
+      border-radius: 20px; 
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 20px auto; 
+      line-height: 1.6; 
+      text-align: justify;
+      font-size: 20px;
+      transform:translate(1039px,10px);
+}
+
+.caja2{
+      background: linear-gradient(to right, #000000, #001F4D); 
+      color: white; 
+      padding: 20px; 
+      border-radius: 20px; 
+      font-family: Arial, sans-serif; 
+      max-width: 600px; 
+      margin: 20px auto;
+      line-height: 1.6; 
+      text-align: justify;
+      font-size: 20px;
+      transform:translate(1039px,10px); 
+}
+
+.caja3{
+      background: linear-gradient(to right, #000000, #001F4D); 
+      color: white; 
+      padding: 20px; 
+      border-radius: 20px; 
+      font-family: Arial, sans-serif; 
+      max-width: 600px; 
+      margin: 20px auto; 
+      line-height: 1.6; 
+      text-align: justify;
+      font-size: 20px;
+      transform:translate(1039px,10px); 
+}

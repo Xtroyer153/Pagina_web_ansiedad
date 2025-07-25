@@ -1,0 +1,63 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5faff;
+    color: #0d0d0d;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* --- TÍTULOS --- */
+main h1 {
+    font-size: 2rem;
+    color: #001f66;
+    margin-bottom: 20px;
+}
+
+main h2.nivel {
+    font-size: 2.2rem;
+    color: #003399;
+    background-color: #e6f0ff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* --- MENSAJE DE RECOMENDACIÓN --- */
+.recomendacion {
+    font-size: 1.1rem;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f0f6ff;
+    border-left: 6px solid #003399;
+    border-radius: 10px;
+    color: #0d1f5a;
+}
+
+/* --- BOTÓN VOLVER --- */
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #001f66;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #003399;
+}

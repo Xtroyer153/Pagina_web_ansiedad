@@ -1,0 +1,33 @@
+.contenedor {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: block;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.resumen {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px; 
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.graficas {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.grafica {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

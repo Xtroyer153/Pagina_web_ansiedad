@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #03152d, #002c70);
+  color: white;
+  font-size: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.login-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.login-img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.formularioDeIngreso {
+  flex: 1;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .login-contenedor {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .login-img,
+  .formularioDeIngreso {
+    max-width: 90%;
+    width: 100%;
+  }
+}
+.formularioDeIngreso h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.formularioDeIngreso input[type="text"],
+.formularioDeIngreso input[type="password"] {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 30px;
+  border: none;
+  background-color: #f0f0f0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-con-icono {
+  position: relative;
+}
+
+.input-con-icono input {
+  padding-right: 3rem;
+}
+
+.h2 {
+  color: #ffffff;
+}
+
+
+.icono-pass {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.formularioDeIngreso input:focus {
+  outline: none;
+  background-color: #ffffff;
+}
+
+.cajaRecuerda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.cajaRecuerda a {
+  color: #a0c4ff;
+  text-decoration: none;
+}
+
+.formularioDeIngreso button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #145da0;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formularioDeIngreso button:hover {
+  background-color: #0b3d70;
+}
+
+.registrarse {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.registrarse a {
+  color: #88bced;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.registrarse a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.mensaje-error {
+  background-color: #ffd2d2;
+  color: #a94442;
+  padding: 10px 20px;
+  border: 1px solid #e6aaaa;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-icon {
+  margin-bottom: 0.3rem;
+}
+
+.login-icon img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.boton-admin {
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  z-index: 10;
+}
+
+.btn-admin {
+  background-color: #145da0;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-admin:hover {
+  background-color: #0b3d70;
+}
+
+
+@media (max-width: 768px) {
+  .contenedor {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .imgrobot1, .formularioDeIngreso {
+    max-width: 90%;
+    flex: none;
+    margin: 0 auto;
+  }
+}

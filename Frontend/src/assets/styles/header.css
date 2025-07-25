@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #021024;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navbar general */
+.navbar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+/* Enlaces centrales */
+.center-links {
+  display: flex;
+  gap: 1.8rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Enlaces derecha */
+.right-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  min-width: 280px;
+  justify-content: flex-end;
+}
+
+.right-links img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Enlaces generales */
+.navbar a,
+.dropbtn,
+.user-dropbtn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0.3rem 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Subrayado animado */
+.navbar a::after,
+.dropbtn::after,
+.user-dropbtn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after,
+.dropbtn:hover::after,
+.user-dropbtn:hover::after {
+  width: 100%;
+}
+
+/* Dropdown menus */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  background-color: #0b3d70;
+  border-radius: 0 0 5px 5px;
+  min-width: 220px;
+  z-index: 99;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #0a2e5d;
+}
+
+.show {
+  display: flex;
+}
+
+.user-dropdown .user-dropbtn img {
+  margin-left: 0.5rem;
+}
+
+.etiqueta-usuario {
+  font-weight: bold;
+  color: white;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-dropdown .dropdown-content {
+  right: 0;
+  left: auto;
+  display: block;
+  text-align: right !important;
+}
+
+.user-icon {
+  width: 150px;         /* aumenta el tamaño (ajusta a tu gusto) */
+  height: 150px;
+  cursor: pointer;
+  margin-left: 10px;  /* mueve un poco hacia la izquierda (opcional) */
+}
+.logout-link {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logout-link:hover {
+  background-color: #0a2e5d;
+}
+

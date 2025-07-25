@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  color: white;
+  font-size: 15px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.imageOverlaay {
+  position: absolute;
+  top: 240px;
+  left: 54%; /* Centra la imagen horizontalmente */
+  transform: translateX(50%);
+  z-index: 2;
+}
+
+.imgN5 {
+  width: 350px;
+  height: auto;
+  pointer-events: none; /* No bloquea clics en texto debajo */
+}
+
+.Subtitulo24e{
+    position: relative;
+    top: 0;
+    left: 92%;
+    color:rgb(255, 255, 255);
+    font-size:45px; 
+    font-weight: bold;
+}
+.caja2zzzz{
+      background: linear-gradient(to right, #000000, #001F4D); 
+      color: white; 
+      padding: 20px; 
+      border-radius: 20px; 
+      font-family: Arial, sans-serif;
+      max-width: 530px;
+      margin: 20px auto; 
+      line-height: 1.6; 
+      text-align: justify;
+      font-size: 20px;
+      transform:translate(500px,10px);
+}

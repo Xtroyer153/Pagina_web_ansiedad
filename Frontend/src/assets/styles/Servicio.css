@@ -1,0 +1,26 @@
+.ImagenSuperposicionada102 {
+  position: absolute;
+  top: 270px;
+  left: 35%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  z-index: 2; /* Asegura que esté por encima del texto */
+}
+
+.robooso {
+  width: 300px;
+  height: auto;
+  pointer-events: none; /* No bloquea clics en texto debajo */
+}
+
+.titulo-centrado {
+  position: relative;
+  top:70px;
+  left: 214%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  white-space: nowrap;
+  line-height: 1.5;
+}
