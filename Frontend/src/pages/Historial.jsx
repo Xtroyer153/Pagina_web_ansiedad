@@ -12,7 +12,7 @@ const Historial = () => {
 
   useEffect(() => {
     // Obtener usuario actual desde sesión
-    fetch('/api/usuario/actual')
+    fetch('${import.meta.env.VITE_API_URL}/api/usuario/actual')
       .then(res => {
         if (res.status === 401) {
           navigate('/login');
@@ -23,7 +23,7 @@ const Historial = () => {
       .then(data => {
         if (data?.usuario) {
           setUsername(data.usuario);
-          return fetch(`/api/historial/${data.usuario}`);
+          return fetch(`${import.meta.env.VITE_API_URL}/api/historial/${data.usuario}`);
         }
       })
       .then(res => res?.json())
