@@ -37,7 +37,7 @@ export async function enviarRespuestas() {
   }
 
   try {
-    const res = await fetch("http://localhost:8000/api/test/resultado", {
+    const res = await fetch("${import.meta.env.VITE_API_URL}/api/test/resultado", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
