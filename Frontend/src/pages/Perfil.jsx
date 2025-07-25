@@ -52,7 +52,7 @@ function Perfil() {
     });
 
     if (confirmado.isConfirmed) {
-      const res = await fetch("/api/eliminar_usuario", {
+      const res = await fetch("${import.meta.env.VITE_API_URL}/api/eliminar_usuario", {
         method: "POST",
       });
       if (res.ok) {
