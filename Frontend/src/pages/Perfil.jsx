@@ -100,15 +100,6 @@ function Perfil() {
           </div>
 
           <div className="botones">
-            <button className="btn-accion" onClick={() => navigate("/test")}>
-              Iniciar test ▶
-            </button>
-            <button className="btn-accion" onClick={() => navigate("/info")}>
-              Ver resultados ▶
-            </button>
-            <button className="btn-cerrar-sesion" onClick={handleLogout}>
-              Cerrar sesión ✖
-            </button>
             <form onSubmit={handleEliminarCuenta}>
               <button type="submit" className="btn-eliminar-cuenta">
                 Eliminar cuenta 🗑️
