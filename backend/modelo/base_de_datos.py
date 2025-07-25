@@ -1,11 +1,11 @@
-import psycopg2
+nimport psycopg2
 import psycopg2.extras
 import pytz
 import json
 
 DB_HOST = "localhost"
 DB_NAME = "menteunfv"
-DB_USER = "postgres"
+DB_USER = "brian"
 DB_PASSWORD = "root"
 
 def obtener_conexion():
