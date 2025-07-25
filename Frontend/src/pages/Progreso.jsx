@@ -16,7 +16,7 @@ const Progreso = () => {
   const barChartRef = useRef(null);
 
   useEffect(() => {
-    fetch('/api/usuario/actual')
+    fetch('${import.meta.env.VITE_API_URL}/api/usuario/actual')
       .then(res => {
         if (res.status === 401) {
           navigate('/login');
@@ -26,7 +26,7 @@ const Progreso = () => {
       })
       .then(data => {
         if (data?.usuario) {
-          fetch(`/api/progreso/${data.usuario}`)
+          fetch(`${import.meta.env.VITE_API_URL}/api/progreso/${data.usuario}`)
             .then(res => res.json())
             .then(datos => {
               setPromedio(datos.promedio);
