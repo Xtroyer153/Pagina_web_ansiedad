@@ -26,7 +26,7 @@ const Pregunta = () => {
   const [fijado, setFijado] = useState(false);
 
   useEffect(() => {
-    fetch(`/api/test/pregunta/${numero}`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/test/pregunta/${numero}`)
       .then(res => {
         if (!res.ok) throw new Error("Error al cargar la pregunta");
         return res.json();
