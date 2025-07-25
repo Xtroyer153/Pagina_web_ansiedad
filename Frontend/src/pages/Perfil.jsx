@@ -15,7 +15,7 @@ function Perfil() {
   useEffect(() => {
     const fetchPerfil = async () => {
       try {
-        const res = await fetch("/api/usuario/perfil");
+        const res = await fetch("${import.meta.env.VITE_API_URL}/api/usuario/perfil");
         if (res.status === 401) {
           navigate("/login?msg=login_required");
           return;
@@ -32,7 +32,7 @@ function Perfil() {
   }, [navigate]);
 
   const handleLogout = async () => {
-    const res = await fetch("/api/logout", { method: "POST" });
+    const res = await fetch("${import.meta.env.VITE_API_URL}/api/logout", { method: "POST" });
     if (res.ok) {
       navigate("/login?msg=logout_success");
     } else {
