@@ -2,11 +2,23 @@ nimport psycopg2
 import psycopg2.extras
 import pytz
 import json
+import os
+import urllib.parse as up
 
-DB_HOST = "localhost"
-DB_NAME = "menteunfv"
-DB_USER = "brian"
-DB_PASSWORD = "root"
+# Leer URL de Render
+url = os.environ.get("DATABASE_URL")
+
+# Descomponer URL para psycopg2
+if url:
+    up.uses_netloc.append("postgres")
+    db_url = up.urlparse(url)
+    DB_HOST = db_url.hostname
+    DB_NAME = db_url.path[1:]
+    DB_USER = db_url.username
+    DB_PASSWORD = db_url.password
+    DB_PORT = db_url.port
+else:
+    raise Exception("DATABASE_URL no está definida en el entorno")
 
 def obtener_conexion():
     try:
@@ -14,7 +26,8 @@ def obtener_conexion():
             host=DB_HOST,
             database=DB_NAME,
             user=DB_USER,
-            password=DB_PASSWORD
+            password=DB_PASSWORD,
+            port=DB_PORT
         )
     except psycopg2.Error as e:
         print("Error al conectar a la base de datos:", e)
