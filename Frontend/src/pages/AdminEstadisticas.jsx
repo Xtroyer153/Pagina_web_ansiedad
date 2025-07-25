@@ -22,7 +22,7 @@ const AdminEstadisticas = () => {
   const chartInstances = useRef({});
 
   useEffect(() => {
-    fetch("/api/usuarios/todos")
+    fetch("${import.meta.env.VITE_API_URL}/api/usuarios/todos")
       .then((res) => {
         if (!res.ok) throw new Error("Error al obtener usuarios");
         return res.json();
