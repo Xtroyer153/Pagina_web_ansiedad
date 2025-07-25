@@ -11,7 +11,7 @@ function Header() {
   const username = localStorage.getItem("username");
 
 const handleLogout = () => {
-  fetch("/api/logout", {
+  fetch("${import.meta.env.VITE_API_URL}/api/logout", {
     method: "POST",
     credentials: "include"
   })
