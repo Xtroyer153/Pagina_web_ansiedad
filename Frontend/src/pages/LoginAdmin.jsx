@@ -27,7 +27,7 @@ function LoginAdmin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("/api/loginAdmin", {
+      const res = await fetch("${import.meta.env.VITE_API_URL}/api/loginAdmin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
